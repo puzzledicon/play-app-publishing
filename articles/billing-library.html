@@ -30,10 +30,14 @@
       <div class="keywords"><span>Google Play上架</span><span>如何上架App</span><span>AAB</span><span>App Bundle</span><span>商店详情</span><span>Data safety</span><span>开通内购</span><span>Play Billing Library</span></div>
     </div>
     <div class="content">
-      <h2>操作步骤要点</h2>
-      <ul class="check"><li>在应用中集成官方 Play Billing Library。</li><li>查询商品详情 → 拉起购买流程 → 确认购买。</li><li>处理好待处理交易与确认逻辑，避免重复发货问题。</li><li>服务端校验可提升安全性（按业务需要）。</li><li>用许可测试账号验证成功、取消与失败路径。</li></ul>
-      <h2>实操建议</h2>
-      <ul class="check"><li>所有费用、材料与审核结果以平台当前页面为准。</li><li>中途更换主体类型或关键资料，容易导致验证反复。</li><li>涉及内购时，先完成付款/协议，再创建商品与联调。</li></ul>
+      <h2>适用场景</h2>
+      <p>接入结算库并发起购买。</p>
+      <h2>接入要点</h2>
+      <ol class="steps"><li>依赖稳定版 Billing Library。</li><li>连接 BillingClient 并监听更新。</li><li>查询商品详情并展示价格。</li><li>发起购买流，服务端校验（推荐）。</li><li>消耗型 consume；非消耗/订阅 acknowledge。</li><li>处理取消、失败与待处理交易。</li></ol>
+      <h2>注意事项</h2>
+      <ul class="check"><li>用许可测试账号在真实环境测。</li><li>漏 acknowledge 会导致状态异常。</li><li>R8 需保留相关类。</li></ul>
+      <h2>官方参考</h2>
+      <p><a href="https://developer.android.com/google/play/billing/integrate" target="_blank" rel="noopener">集成说明</a></p>
     </div>
     <p style="margin-top:1rem"><a href="../index.html">← 返回目录</a></p>
 

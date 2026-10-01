@@ -30,10 +30,16 @@
       <div class="keywords"><span>Google Play上架</span><span>如何上架App</span><span>AAB</span><span>App Bundle</span><span>商店详情</span><span>Data safety</span><span>开通内购</span><span>Play Billing Library</span></div>
     </div>
     <div class="content">
-      <h2>操作步骤要点</h2>
-      <ul class="check"><li>正式分发使用 App Bundle（AAB）。</li><li>内部测试适合小范围快速验证。</li><li>封闭/开放测试用于更广反馈与权限门槛。</li><li>晋升轨道前确认版本代码与发布说明。</li><li>可使用分阶段发布降低全量风险。</li></ul>
-      <h2>实操建议</h2>
-      <ul class="check"><li>所有费用、材料与审核结果以平台当前页面为准。</li><li>中途更换主体类型或关键资料，容易导致验证反复。</li><li>涉及内购时，先完成付款/协议，再创建商品与联调。</li></ul>
+      <h2>适用场景</h2>
+      <p>上传 AAB 并选择测试/生产轨道。</p>
+      <h2>轨道说明</h2>
+      <ul class="check"><li>内部测试：小范围快速验证</li><li>封闭测试：受邀用户，常用于新账号门槛</li><li>开放测试：公开可加入</li><li>生产：正式用户</li></ul>
+      <h2>操作步骤</h2>
+      <ol class="steps"><li>打出已签名 AAB。</li><li>在对应轨道创建新版本并上传。</li><li>填写版本说明，处理警告错误。</li><li>选择国家与分阶段策略。</li><li>提交并关注状态。</li></ol>
+      <h2>注意事项</h2>
+      <ul class="check"><li>versionCode 必须递增。</li><li>备份签名密钥 / Play App Signing。</li><li>生产轨道要求更高。</li></ul>
+      <h2>官方参考</h2>
+      <p><a href="https://support.google.com/googleplay/android-developer/answer/9859348" target="_blank" rel="noopener">准备与发布版本</a></p>
     </div>
     <p style="margin-top:1rem"><a href="../index.html">← 返回目录</a></p>
 

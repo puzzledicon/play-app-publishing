@@ -1,6 +1,6 @@
 # Google Play 上架与内购笔记
 
-从如何创建应用、如何配置测试，到如何开通内购商品与送审，按发布顺序整理。
+从创建应用、上传 AAB、填写商店详情与 Data safety，到创建内购商品、接入结算库与处理拒审，按发布顺序整理。
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-2ea44f?logo=github)](https://puzzledicon.github.io/play-app-publishing/)
 
